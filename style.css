@@ -185,7 +185,7 @@ span{
 .typing-text{
     font-size: 34px;
     font-weight: 600;
-    min-width: 280px;
+    min-width: 180px;
 }
 
 .typing-text span{
@@ -193,14 +193,14 @@ span{
 }
 
 .typing-text span::before{
-    content: "Graphic Designer";
+    content: "Graphics Designer";
     color: #b74b4b;
     animation: words 20s infinite;
 }
 
 .typing-text span::after{
     content: "";
-    position: absolute;
+    /* position: absolute; */
     width: calc(100% + 8px);
     height: 100%;
     background-color: black;
@@ -217,11 +217,12 @@ span{
 
 @keyframes words{
     0%,20%{
-        content:"Grahpic Designer";
+        content:"Graphic Designer";
     }
     40%,60%{
         content:"Video Editor";
     }
+
 }
 
 @media (max-width: 1000px) {
